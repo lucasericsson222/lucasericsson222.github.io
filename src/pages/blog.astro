@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const allPosts = await Astro.glob('../pages/posts/*.md');
+
+function formatDate(input: Date): String {
+    let day = input.getDate()
+    let month = input.getMonth()
+    let year = input.getFullYear()
+    return `${year}-${month}-${day}` 
+}
+---
+<BaseLayout frontmatter={{title: "Blog Posts"}}>
+    <h1 class="tokipona" lang="tok">lipu mute</h1>
+    <ul>
+        {allPosts.map((post) => 
+            <li>
+                <a class="left" href={post.url}>{post.frontmatter.title}</a>
+                <p class="right">{formatDate(new Date(post.frontmatter.pubDate))}</p>
+            </li>
+        )}
+    </ul>
+</BaseLayout>
+<style>
+    .right {
+        float: right;
+        margin: 0;
+        padding: 0.5rem;
+        padding-top: 0;
+        line-height: 1.2rem;
+    }
+    .left {
+        padding-left: 0;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 1rem;
+    }
+</style>

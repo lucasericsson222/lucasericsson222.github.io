@@ -1,0 +1,26 @@
+---
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+const { frontmatter } = Astro.props
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="author" content="Lucas Ericsson"/>
+    <meta name="description" content="Computer Science and Linguistics Blog"/>
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <Nav/> 
+    <main>
+      <div>
+        <slot/>
+      </div>
+    </main>
+    <Footer/>
+  </body>
+</html>

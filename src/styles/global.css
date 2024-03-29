@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'leko-lili-15x15';
+    src: url(/FairfaxPona.ttf);
+}
+
+.tokipona {
+    font-family: 'leko-lili-15x15';
+}
+
+@media (min-width: 1000px) {
+    .nav {
+        position: fixed;
+        height: 100vh;
+        flex-direction: column;
+        left: calc(50% - 300px - 8rem);
+    }
+    .nav ul {
+        text-align: right;
+    }
+}
+@media (max-width: 999px) {
+    .nav li {
+        display: inline-block;
+    }
+    .nav {
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+}
+.nav {
+    display: flex;
+    justify-content: center;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+.nav a {
+    padding: 0.5rem;
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+a[href*='//']:before {
+    content: "[";
+}
+a[href*='//']:after {
+    content: "]";
+}
+a:before {
+    content: "{";
+}
+a:after {
+    content: "}";
+}
+a:active:before {
+    content: "~";
+}
+a:active:after {
+    content: "~";
+}
+a:hover:before {
+    content: "~"
+}
+a:hover:after {
+    content: "~"
+}
+body {
+    margin: 0;
+    background-image: url("/static.gif");
+    background-color: rgb(31, 31, 31);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: rgba(245, 245, 245, 0.901);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+main {
+    max-width: 600px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 6rem);
+}
+p {
+    line-height: 1.5rem;
+    font-size: 16px;
+}
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.134);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2rem;
+}
+tbody td {
+    text-align: center;
+}
+thead th {
+    background-color: rgba(255, 255, 255, 0.134);
+    border-bottom: 1px solid white;
+
+}
+th, td {
+    padding: 1rem;
+}
+blockquote {
+    border-left: 1px solid white;
+    padding-left: 1rem;
+}
