@@ -2,7 +2,7 @@
 layout: "../layouts/BaseLayout.astro"
 title: "Lucas Ericsson's Homepage"
 ---
-<h1 class="tokipona" lang="tok"> kasi suli li pona mute a&ThickSpace;</h1>
+<h1 class="tokipona" lang="tok"> kasi suli li pona mute a</h1>
 
 # Welcome! 
 

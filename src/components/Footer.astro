@@ -2,10 +2,16 @@
     <a href="https://github.com/lucasericsson222" target="_blank" rel="noopener noreferrer">
         <img width="32px" height="32px" src="/github-mark-white.svg" alt="Github Icon"></img>
     </a>
+    <a href="/constellation">
+        <img width="32px" height="32px" src="/constellation.svg" alt="Constellation Webring Icon"></img>
+    </a>
 </footer>
 <style>
     img {
         padding: 10px;
+    }
+    a {
+        text-decoration: none;
     }
     a:before {
         content: "";
@@ -24,5 +30,12 @@
     }
     a:hover:after {
         content: ""
+    }
+    a:hover img {
+        filter: invert(1);
+    }
+    a:hover img {
+        background-color: rgb(55, 55, 55);
+        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%, 50% 0) 
     }
 </style>

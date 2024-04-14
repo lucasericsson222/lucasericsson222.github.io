@@ -18,10 +18,25 @@ author: 'kasisuli, aquarmity, john scarce'
 > 
 > -- Nicholas Ostler, *Empires of the Word: A Language History of the World*
 
-We are but ducks, feeling small while looking up at the stars.
+Apmua'mur is a language about ducks!
+Every word for a living being is derived from the word "duck" or "uampa."
+Originally, it came from a joke in Spanish calling each other "pato", but it
+now has become the greatest compliment to call someone a "good duck" or "uampa'tav" in
+our language.
 
+The main unique parts of this language are its <abbr>VSO</abbr> (Verb Subject Object) 
+word order, its reversing of letter order to create opposing concept words, and 
+the conjugation of the tense of a verb goes in front of a verb.
+
+Since "ampau" is the reversed letter order of "uampa" it refers to the opposite concept, and 
+"mur" is the word for "language."
+So the name of this language is essentially: "Totally not a duck language."
+
+This blog post covers the essential ideas needed for learning the language.
 
 # Phonology / Romanization
+
+<div class="rotated-table overflow-table">
 
 | Consonants | Bilabial | Labiodental | Linguolabial | Alveolar | Postalveolar | Palatal | Labial-velar | Glottal |
 | ---         | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -30,6 +45,16 @@ We are but ducks, feeling small while looking up at the stars.
 | Fricative   |     | v | th /ð/ | z | j /ʒ/ |  |  |  |
 | Approximant |     |  |  | l | r /ɹ̠/ | y /j/ | w |  |
 | Tap         |     |  |  | r |  |  |  |  |
+
+</div>
+
+<aside>
+You might notice that there are two 'r' characters here. Apmau'mur started with using the /r/ 
+between vowels and the <nobr>/ɹ̠/</nobr> when there is a consonant afterwords. However, we have also taken to
+the habit of adding a /ə/ after the /r/ instead.
+</aside>
+
+----------------------------------------------
 
 | Vowels | Front | Central | Back |
 | --- | --- | --- | --- |
@@ -45,21 +70,22 @@ The vowels consist of the five vowel system with the schwa included.
 
 # Grammar
 
-Uampa Lang’s sentences are written in Verb Subject Object (VSO) order. The goal is to place emphasis on the action.
+Apmau'mur’s sentences are written in Verb Subject Object (VSO) order. The goal is to place emphasis on the action.
 
 For example: 
 
-A’imva oya ov. 
-
-[Present] (to want) (I) (food).
-
-I want food.
+> A’imva oya ov. 
+>
+> [Present] (to want) (I) (food).
+>
+> I want food.
 
 ## Tenses
 
 Tenses are indicated by the prefix to the verb. If a prefix ever has a vowel next to another vowel, a glottal stop (’) is inserted.
 
 Our tenses include:
+<div class="overflow-table"> 
 
 | Tense |  | Prefix | Example | Translation | English |
 | --- | --- | --- | --- | --- | --- |
@@ -77,6 +103,8 @@ Our tenses include:
 |  | P | im |  |  |  |
 | Command |  | a’a | a’amazam‘erol | [Command] (to walk + end = stop walking)  | Stop walking! |
 
+</div>
+
 ## Pronouns
 
 Our personal pronouns are, by default, genderless, and the plural can be created by reversing the letter order of the characters for the singular pronoun. We also differentiate between they for objects and they for people.
@@ -90,7 +118,7 @@ Our personal pronouns are, by default, genderless, and the plural can be created
 
 For demonstrative pronouns, we have
 
-| Demonstrative Pronoun | Singular | Plural |
+| Demon<wbr>strative Pronoun | Singular | Plural |
 | --- | --- | --- |
 | this | tol | lot |
 | that | pol | lop |
@@ -159,8 +187,9 @@ We have the following conjunctions:
 
 We have the following prepositions:
 
-| pa | In |
+| apmau | eng |
 | --- | --- |
+| pa | In |
 | yu | At |
 | apli | of |
 | ilpa | to |
@@ -177,11 +206,11 @@ Some verbs are transitive of degree two, which means that they can have an indir
 
 Example:
 
-a’thua ila thua uñe oya.
-
-[Present] (to give) (you) (wealth) (to) (me)
-
-You give wealth to me.
+> a’thua ila thua uñe oya.
+>
+> [Present] (to give) (you) (wealth) (to) (me)
+>
+> You give wealth to me.
 
 > This sentence also has a special meaning in this language which started as a joke: It also can be used as a great compliment to someone as in “You give value to my world/life.”
 
@@ -208,3 +237,7 @@ For example:
 > erol
 >
 > (end)
+
+# Orthography
+
+![Planetary Written Language for Apmau'mur](/canvas.png)
