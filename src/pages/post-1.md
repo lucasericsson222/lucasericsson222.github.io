@@ -20,4 +20,4 @@ author: 'kasisuli'
 > -- Lewis Carroll, &nbsp; *Alice in Wonderland*
 
 Here is to the start of a new adventure: learning how to write nice articles.
-I'm not fully sure what will go here at this point, but I hope it's interesting or useful to anyone who finds it.
+I'm not fully sure what will go here at this point, but I hope it's interesting or useful to anyone who finds it. (Wow you found this webpage)
