@@ -8,7 +8,7 @@ author: 'kasisuli'
 
 <h1><span class="tokipona" lang="tok"> lawa pakala</span> Haskell</h1>
 
-So, my first experience with haskell was through this research article: 
+So, my first experience with Haskell was through this research article: 
 
 I found it by:
 - exploring https://webring.xxiivv.com/

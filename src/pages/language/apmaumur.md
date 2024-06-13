@@ -26,7 +26,7 @@ The main unique parts of this language are its <abbr>VSO</abbr> (Verb Subject Ob
 word order, its reversing of letter order to create opposing concept words, and 
 the conjugation of the tense of a verb goes in front of a verb.
 
-Since "ampau" is the reversed letter order of "uampa" it refers to the opposite concept, and 
+Since "apmau" is the reversed letter order of "uampa" it refers to the opposite concept, and 
 "mur" is the word for "language."
 So the name of this language is essentially: "Totally not a duck language."
 
