@@ -123,3 +123,4 @@ class Functor f where
 ```
 So types can inherit the class functor. `f` is a container in this case, and `(a -> b)` is the mapping, with `f a -> f b` showing how it's only changing the item in the container.
 
+To be continued...
