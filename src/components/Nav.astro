@@ -1,23 +1,43 @@
 
 <nav>
     <ul>
+        <div>
+            <div>
+            </div>
+        </div>
     <li>
         <a href="/">Home</a>
     </li>
     <li>
-        <a href="/blog">Blog</a>
+        <a href="/programming">Programming</a>
     </li>
     <li>
-        <a href="/">Projects</a>
+        <a href="/music">Music</a>
     </li>
     <li>
-        <a href="/">Music</a>
+        <a href="/language">Language</a>
     </li>
     </ul>
 </nav>
 
 <style>
+ul {
+    padding-left:0;
+}
 @media (min-width: 1000px) {
+    ul {
+        background-image: linear-gradient(rgba(220, 20, 60, 0.371), rgba(177, 20, 220, 0.143), rgba(0,0,0,0));
+        width: 10rem;
+    }
+    nav div {
+        position: absolute;
+        margin-top: 3rem;
+        margin-left: -3rem;
+        width: 10rem;
+        height: 10rem;
+        background-image: linear-gradient(rgba(220, 20, 60, 0.371), rgba(177, 20, 220, 0.143), rgba(0,0,0,0));
+        z-index: -1;
+    }
     nav {
         position: fixed;
         height: 100vh;
@@ -44,40 +64,16 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-}
-nav li {
 }
 nav a {
     padding: 0.5rem;
     display: block;
-    width: 3.5crem;
-}
-a[href*='//']:before {
-    content: "[";
-}
-a[href*='//']:after {
-    content: "]";
-}
-a:before {
-    content: "{";
-}
-a:after {
-    content: "}";
-}
-a:active:before {
-    content: "~";
-}
-a:active:after {
-    content: "~";
-}
-a:hover:before {
-    content: "~"
-}
-a:hover:after {
-    content: "~"
 }
 a {
     text-decoration: none;
+}
+a:active {
+    background-color: rgba(255, 255, 255, 0.401);
+    color: black;
 }
 </style>

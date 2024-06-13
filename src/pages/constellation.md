@@ -8,6 +8,7 @@ title: "Constellation"
 # The Constellation Web Ring
 
 <img src="/constellation.svg" alt="Constellation Web Ring Logo" style="float: right;" width="64px" height="64px"/>
+
 Here is a collection of websites which are all amazing.
 
 - [https://localhost]()

@@ -6,9 +6,7 @@ description: 'This is the first post on my astro blog'
 author: 'kasisuli'
 ---
 
-<h1 class="tokipona" lang="tok"> toki tan lipu wan mi </h1>
-
-# Hello from My First Blog Post
+<h1>  <span class="tokipona" lang="tok">toki tan lipu wan mi</span> Hello from my first blog post!</h1>
 
 >
 > “Would you tell me,

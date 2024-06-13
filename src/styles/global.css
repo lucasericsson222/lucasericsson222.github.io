@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @font-face {
     font-family: 'leko-lili-15x15';
     src: url(/FairfaxPona.ttf);
@@ -8,7 +7,7 @@
     font-family: 'Bodoni Bold';
     src: url("/Bodoni Bold.ttf")
 }
-* {
+body {
     font-family: 'EB Garamond';
 }
 
@@ -18,6 +17,7 @@
 .tokipona:after {
     content:"\00a0";
 }
+
 h1,
 h2,
 h3,
@@ -51,7 +51,7 @@ main {
     justify-content: center;
     width: calc(100% - 6rem);
 }
-p {
+p, ul, li {
     font-size: 14pt;
     line-height: 1.7rem;
 }
@@ -110,6 +110,7 @@ blockquote {
     }
     *:has(+ aside) {
         float: left;
+        width: 100%;
     }
 }
 @media (max-width: 999px) {
@@ -129,7 +130,21 @@ a:not(footer a):hover {
     color: black;
     text-decoration: none;
 }
-main p:not(blockquote p, li p):first-of-type::first-letter {
+
+code {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+pre {
+    padding: 1rem;
+}
+
+.github-dark {
+    background-color: rgb(31, 31, 31);
+}
+
+/*main p:not(blockquote p, li p):first-of-type::first-letter {
     font-size: 4.5rem; 
     float: left;
     line-height: 4rem;
@@ -138,4 +153,4 @@ main p:not(blockquote p, li p):first-of-type::first-letter {
     margin-top: 0.5rem;
     padding: 0.5rem;
     border: solid whitesmoke 1px;
-}
+}*/

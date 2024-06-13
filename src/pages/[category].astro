@@ -1,0 +1,61 @@
+---
+const { category } = Astro.params;
+import type { MarkdownInstance } from "astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+let allPosts: MarkdownInstance<Record<string, any>>[] = [];
+switch (category) {
+    case "programming": 
+        allPosts = await Astro.glob('../pages/programming/*.md');
+        break;
+    case "music":
+        break;
+    case "language":
+        allPosts = await Astro.glob('../pages/language/*.md');
+        break;
+};
+
+function formatDate(input: Date): String {
+    let day = input.getDate()
+    let month = input.getMonth()
+    let year = input.getFullYear()
+    return `${year}-${month}-${day}` 
+}
+export function getStaticPaths() {
+  return [
+    {params: {category: 'programming'}},
+    {params: {category: 'music'}},
+    {params: {category: 'language'}},
+  ];
+}
+---
+<BaseLayout frontmatter={{title: "Blog Posts"}}>
+    <h1 class="tokipona" lang="tok">lipu mute</h1>
+    <ul>
+        {allPosts.map((post) => 
+            <li>
+                <a class="left" href={post.url}>{post.frontmatter.title}</a>
+                <p class="right">{formatDate(new Date(post.frontmatter.pubDate))}</p>
+            </li>
+        )}
+    </ul>
+</BaseLayout>
+<style>
+    .right {
+        float: right;
+        margin: 0;
+        padding: 0.5rem;
+        line-height: 1.2rem;
+    }
+    .left {
+        padding-left: 0;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 1rem;
+    }
+</style>

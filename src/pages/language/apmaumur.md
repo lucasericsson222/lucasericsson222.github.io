@@ -1,14 +1,12 @@
 ---
 layout: '../../layouts/BaseLayout.astro'
-title: "Ampau'mur: a Constructed Language"
+title: "Apmau'mur: a Constructed Language"
 pubDate: 2024-03-24
 description: 'A constructed language appreciates the glottal stop.'
 author: 'kasisuli, aquarmity, john scarce'
 ---
 
-<h1 class="tokipona" lang="tok"> toki pi soweli telo </h1>
-
-# Apmau’mur
+<h1><span class="tokipona" lang="tok"> toki pi soweli telo </span> Apmau'mur</h1>
 
 >
 > And so it is that languages, unlike any of the people who speak them, 
@@ -189,8 +187,8 @@ We have the following prepositions:
 
 | apmau | eng |
 | --- | --- |
-| pa | In |
-| yu | At |
+| pa | in |
+| yu | at |
 | apli | of |
 | ilpa | to |
 | yujol | on |
@@ -206,13 +204,15 @@ Some verbs are transitive of degree two, which means that they can have an indir
 
 Example:
 
+
 > a’thua ila thua uñe oya.
 >
 > [Present] (to give) (you) (wealth) (to) (me)
 >
 > You give wealth to me.
 
-> This sentence also has a special meaning in this language which started as a joke: It also can be used as a great compliment to someone as in “You give value to my world/life.”
+<aside> This sentence also has a special meaning in this language which started as a joke: It also can be used as a great compliment to someone as in “You give value to my world/life.”
+</aside>
 
 ## Opposing Concepts
 
@@ -225,13 +225,14 @@ For example:
 > (good)
 > 
 > vat
-
-> (bad)
 >
-> Or another:
+> (bad)
+
+Or another:
+
 >
 > lore
-
+>
 > (begin)
 >
 > erol
