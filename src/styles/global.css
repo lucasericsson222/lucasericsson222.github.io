@@ -144,6 +144,14 @@ pre {
     background-color: rgb(31, 31, 31);
 }
 
+a {
+    word-wrap: break-word;
+}
+
+main img {
+    width: 100%;
+}
+
 /*main p:not(blockquote p, li p):first-of-type::first-letter {
     font-size: 4.5rem; 
     float: left;
