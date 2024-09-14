@@ -6,7 +6,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 let allPosts: MarkdownInstance<Record<string, any>>[] = [];
 switch (category) {
     case "programming": 
-        allPosts = await Astro.glob('../pages/programming/*.md');
+        allPosts = await Astro.glob('../pages/programming/*/*.md');
         break;
     case "music":
         break;

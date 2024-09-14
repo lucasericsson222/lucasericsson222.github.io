@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BaseLayout.astro'
+layout: '/src/layouts/BaseLayout.astro'
 title: "Haskell. Confusing"
 pubDate: 2024-03-24
 description: 'Learning about Haskell from the ground up'
@@ -60,7 +60,6 @@ It appears to enforce a couple of rules:
 
 // elaborate more here
 
-
 Since all this is described in Haskell, I decided to take some time and learn it.
 
 ## Learning Haskell
@@ -71,6 +70,9 @@ Totally understand it now.
 
 After further reading:
 Haskell types are a Category.
+
+# Functors
+
 Functors are mappings between categories.
 So, a functor in haskell would be mapping the Hask set to another Hask set, without modifying morphism or structure.
 
@@ -98,7 +100,7 @@ For example, in python, something like:
 a = [0, 1, 2]
 addone
     = lambda item: item + 1
-f = lambda x: x.map(addone)
+f = lambda x: map(x, addone)
 
 print(f(a)) # produces [1, 2, 3]
 ```
@@ -123,4 +125,5 @@ class Functor f where
 ```
 So types can inherit the class functor. `f` is a container in this case, and `(a -> b)` is the mapping, with `f a -> f b` showing how it's only changing the item in the container.
 
-To be continued...
+# References
+[Youtube: Haskell for Imperative Programmers #36 - Category Theory (Functors, Applicatives, Monads)](https://youtu.be/Jsmt4uaL1O8)
