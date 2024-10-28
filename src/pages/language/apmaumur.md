@@ -3,10 +3,12 @@ layout: '../../layouts/BaseLayout.astro'
 title: "Apmau'mur: a Constructed Language"
 pubDate: 2024-03-24
 description: 'A constructed language appreciates the glottal stop.'
-author: 'kasisuli, aquarmity, john scarce'
+author: 'Lucas Ericsson, Miguel Diaz, and Tejas Patel'
 ---
 
 <h1><span class="tokipona" lang="tok"> toki pi soweli telo </span> Apmau'mur</h1>
+
+*by Lucas Ericsson, Miguel Diaz, and Tejas Patel*
 
 >
 > And so it is that languages, unlike any of the people who speak them, 

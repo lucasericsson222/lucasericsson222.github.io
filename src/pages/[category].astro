@@ -14,12 +14,13 @@ switch (category) {
         allPosts = await Astro.glob('../pages/language/*.md');
         break;
 };
+allPosts = allPosts.reverse()
 
 function formatDate(input: Date): String {
     let day = input.getDate()
     let month = input.getMonth()
     let year = input.getFullYear()
-    return `${year}-${month}-${day}` 
+    return `${year}-${month + 1}-${day + 1}` 
 }
 export function getStaticPaths() {
   return [

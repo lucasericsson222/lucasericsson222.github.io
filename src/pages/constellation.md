@@ -11,5 +11,5 @@ title: "Constellation"
 
 Here is a collection of websites which are all amazing.
 
-- [https://localhost]()
-- [https://aquarmity.github.io/]()
+- [https://localhost](https://localhost)
+- [https://aquarmity.github.io/](https://aquarmity.github.io/)

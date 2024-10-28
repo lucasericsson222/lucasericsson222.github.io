@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Image from "astro/components/Image.astro";
+
+const images = await Astro.glob("/src/pages/music/*.{jpeg,jpg,png,gif}")
+---
+<BaseLayout frontmatter={{title: "Music"}}>
+
+    <div class="grid">
+    {images.map((img) => 
+        <Image src={img.default} alt="Hello There" class="ablum-cover"></Image>
+    )}
+    </div>
+    
+</BaseLayout>
+
+<style>
+    .grid {
+        display:flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .grid img {
+        width: 10rem;
+        height: 10rem;
+        filter: grayscale(100%);
+        transition: filter 0.5s, opacity 0.2s, transform 0.2s;
+        opacity: 50%;
+        margin: 1rem;
+    }
+    .grid img:hover {
+        filter: grayscale(0%);
+        opacity: 100%;
+        transform: scale(1.2);
+    }
+</style>
