@@ -18,6 +18,25 @@ body {
     content:"\00a0";
 }
 
+span.sc {
+    font-variant: small-caps;
+}
+div.intlin {
+    display: inline-block;
+}
+div.interlinear {
+    padding-left: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 14pt;
+    border-left: 1px solid white;
+}
+div.intlin div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
 h1,
 h2,
 h3,

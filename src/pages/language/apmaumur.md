@@ -74,11 +74,28 @@ Apmau'mur’s sentences are written in Verb Subject Object (VSO) order. The goal
 
 For example: 
 
-> A’imva oya ov. 
->
-> [Present] (to want) (I) (food).
->
-> I want food.
+<div class="interlinear">
+    <div class="orig">A’imva oya ov.</div>
+    <div class="intlin">
+        <div>
+        <span class="morph">A'-inva</span>
+        <span class="trans"><span class="sc">prs</span>-want </span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">oya</span>
+        <span class="trans"> <span class="sc">1sg</span></span>
+        </div>
+    </div>
+    <div class="freetrans">I want food.</div>
+</div>
+
+<aside>
+This uses the <a href="https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf">Leipzig Glossing Rules</a>,
+which is a standard for representing intermediate translations between languages.
+</aside>
+
 
 ## Tenses
 
@@ -89,10 +106,10 @@ Our tenses include:
 
 | Tense |  | Prefix | Example | Translation | English |
 | --- | --- | --- | --- | --- | --- |
-| Present | Simple (S) | a | A’ariz oya itho. | [Present] (to be) (I) (friendly) | I am friendly. |
-|  | Continuous (C) | az | Azolñe aymi. | [Present Continuous] (to work) (They) | They are working. |
-|  | Obligation (O) | av | Avet ila oznim. | [Present Obligation] (to learn) (you) (truth) | You have to learn the truth. |
-|  | Perfect (P) | am | Ammazam ayo. | [Present Perfect] (to walk) (we) | We have ran. |
+| Present | Simple (S) | a | A’ariz oya itho. | PRS-be 1SG hello| I am friendly. |
+|  | Continuous (C) | az | Azolñe aymi. |  PRS.CONT-work 3PL | They are working. |
+|  | Obligation (O) | av | Avet ila oznim. | PRS.DEB-learn 2SG reliable-think | You have to learn the truth. |
+|  | Perfect (P) | am | Ammazam ayo. | PRS.PFV-walk 1PL | We have ran. |
 | Past | S | u |  |  |  |
 |  | C | uz |  |  |  |
 |  | O | uv |  |  |  |
@@ -101,7 +118,7 @@ Our tenses include:
 |  | C | iz |  |  |  |
 |  | O | iv |  |  |  |
 |  | P | im |  |  |  |
-| Command |  | a’a | a’amazam‘erol | [Command] (to walk + end = stop walking)  | Stop walking! |
+| Command |  | a’a | a’amazam‘erol | IMP-walk-end | Stop walking! |
 
 </div>
 
@@ -130,23 +147,74 @@ All questions are created by using the word “uj” as “what.” “uj” can
 
 Common examples include:
 
-> A’ariz pol uj?
-> 
-> [Present] (to be) (that) (what)?
->
-> What is that?
+<div class="interlinear">
+    <div class="orig">A’ariz pol uj?</div>
+    <div class="intlin">
+        <div>
+        <span class="morph">A'-ariz</span>
+        <span class="trans"><span class="sc">prs</span>-be</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">pol</span>
+        <span class="trans"><span class="sc">dem.dist.sg</span></span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">uj</span>
+        <span class="trans"><span class="sc">q</span></span>
+        </div>
+    </div>
+    <div class="freetrans">What is that?</div>
+</div>
 
-> A’ariz uampa’tav’oya yu’uj?
-> 
-> [Present] (to be) (duck + good + I = my friend) (place + what = where)?
-> 
-> Where is my friend?
+<div class="interlinear">
+    <div class="orig">A’ariz uampa’tav’oya yu’uj?</div>
+    <div class="intlin">
+        <div>
+        <span class="morph">A'-ariz</span>
+        <span class="trans"><span class="sc">prs</span>-be</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">uampa'-tav'-oya</span>
+        <span class="trans">duck-good-<span class="sc">1sg</span></span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">yu'-uj</span>
+        <span class="trans">place-<span class="sc">q</span></span>
+        </div>
+    </div>
+    <div class="freetrans">Where is my friend?</div>
+</div>
 
-> A’zo ila uj?
->
-> [Present] (to feel) (you) (what)?
-> 
-> How are you?
+<div class="interlinear">
+    <div class="orig">A’zo ila uj?</div>
+    <div class="intlin">
+        <div>
+        <span class="morph">A'-zo</span>
+        <span class="trans"><span class="sc">prs</span>-feel</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">ila</span>
+        <span class="trans"><span class="sc">2sg</span></span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">uj</span>
+        <span class="trans"><span class="sc">q</span></span>
+        </div>
+    </div>
+    <div class="freetrans">How are you?</div>
+</div>
 
 ## Modifiers and Adjectives
 
@@ -154,21 +222,43 @@ To create new words, one can use two words and join them with a glottal stop (�
 
 You can see it clearly in this example:
 
-> uampa
->
-> (duck)
+<div class="interlinear">
+    <div class="orig">uampa</div>
+    <div class="freetrans">duck</div>
+</div>
 
-> uampa’oz
->
-> (thinking duck = person)
+<div class="interlinear">
+    <div class="orig">uampa'oz</div>
+    <div class="intlin">
+        <div>
+        <span class="morph">uampa'-oz</span>
+        <span class="trans">duck-think</span>
+        </div>
+    </div>
+    <div class="freetrans">person</div>
+</div>
 
-> uampa’oz’et
-> 
-> (thinking duck take = thief)
+<div class="interlinear">
+    <div class="orig">uampa'oz'et</div>
+    <div class="intlin">
+        <div>
+        <span class="morph">uampa'-oz'-et</span>
+        <span class="trans">duck-think-take</span>
+        </div>
+    </div>
+    <div class="freetrans">thief</div>
+</div>
 
-> uampa’oz’et’vo
->
-> (thinking duck take water = pirate)
+<div class="interlinear">
+    <div class="orig">uampa'oz'et'vo</div>
+    <div class="intlin">
+        <div>
+        <span class="morph">uampa'-oz'-et'-vo</span>
+        <span class="trans">duck-think-take-water</span>
+        </div>
+    </div>
+    <div class="freetrans">pirate</div>
+</div>
 
 This allows you to take simple starting words and combine them to create a more complicated word. The later words essentially function as adjectives and modify the concept of the original object.
 
@@ -206,12 +296,40 @@ Some verbs are transitive of degree two, which means that they can have an indir
 
 Example:
 
-
-> a’thua ila thua uñe oya.
->
-> [Present] (to give) (you) (wealth) (to) (me)
->
-> You give wealth to me.
+<div class="interlinear">
+    <div class="orig">a'thua ila thua uñe oya.</div>
+    <div class="intlin">
+        <div>
+        <span class="morph">a'-thua</span>
+        <span class="trans"><span class="sc">prs</span>-give</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">ila</span>
+        <span class="trans"><span class="sc">2sg</span></span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">thua</span>
+        <span class="trans">wealth</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">uñe</span>
+        <span class="trans"><span class="sc">PREP</span></span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">oya</span>
+        <span class="trans"><span class="sc">1sg</span></span>
+        </div>
+    </div>
+    <div class="freetrans">You give wealth to me.</div>
+</div>
 
 <aside> This sentence also has a special meaning in this language which started as a joke: It also can be used as a great compliment to someone as in “You give value to my world/life.”
 </aside>
@@ -222,24 +340,39 @@ To generate new words that are of the opposite concept, you can take a word and 
 
 For example:
 
-> tav
->
-> (good)
-> 
-> vat
->
-> (bad)
+<div class="interlinear">
+    <div class="orig">tav</div>
+    <div class="freetrans">good</div>
+</div>
+<div class="interlinear">
+    <div class="orig">vat</div>
+    <div class="intlin">
+        <div>
+        <span class="trans"><span class="sc">&lt;neg&gt;</span>good</span>
+        </div>
+    </div>
+    <div class="freetrans">bad</div>
+</div>
+
+<aside>
+This reversal will be glossed with infix notation of <>
+</aside>
 
 Or another:
 
->
-> lore
->
-> (begin)
->
-> erol
->
-> (end)
+<div class="interlinear">
+    <div class="orig">lore</div>
+    <div class="freetrans">begin</div>
+</div>
+<div class="interlinear">
+    <div class="orig">erol</div>
+    <div class="intlin">
+        <div>
+        <span class="trans"><span class="sc">&lt;neg&gt;</span>begin</span>
+        </div>
+    </div>
+    <div class="freetrans">end</div>
+</div>
 
 # Orthography
 

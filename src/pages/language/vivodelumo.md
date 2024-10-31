@@ -10,6 +10,8 @@ author: 'Lucas Ericsson'
 
 *by Lucas Ericsson*
 
+<section lang="eo">
+
 La herbo ondetas en movadoj de malhela verdo, kun la nuboj kopiantaj responde. La nokto komenciĝis kaj la varma vento varmigas ĉiun herbfolion. Je ĉi tiu horo de la nokto, la steloj videblas, kaj oni ĵurus ke ankaŭ ili volas moviĝi. Nenio estas vidata ĉar estas mallume, ĝis multaj malgrandaj lumoj vekas la kolorojn en la dormantaj floroj. La fulgoroj alvenas el la grundo kaj lumigas la nokton. 
 
 Se la nokto estas malfrua, estas frua por la homo kiu vidas ĉi tiun scenon. Ri certe venis ĉi tien rekte de laboro ĉar ria nigra laborokostumo nur elstaras kiam ĝi kovras la stelojn. Ri marŝas tra la ondoj de herbo kaj serĉas ion en la ĉielo. La steloj restu samaj kiel antaŭe. 
@@ -27,3 +29,5 @@ Preter la pordo estas farmisto kiu vidas la eniranton. Dum li rigardas, ri diras
 Guto de sango falis el la ĉielo de la subtera urbo. La lumo de vivo estas kio ĝi estas. La homo daŭre kuras, rekte al la plej granda konstruaĵo. Ri elprenas botelon kiu enhavas ardantan manon kaj ĵetas ĝin al la ŝtono. La botelo rompiĝas. Blankaj flamoj manĝas la ŝtonon. La homo rapide forbrulas. La urbo rapide forbrulas. La homoj kuras sed multaj ne eskapas. Multaj homoj ponardas sian sakon kaj malaperas. 
 
 La ĉielo mallumas. La urbo estas for.
+
+</section>
