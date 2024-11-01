@@ -23,6 +23,10 @@ span.sc {
 }
 div.intlin {
     display: inline-block;
+    margin-top: 1rem;
+}
+.intlin:not(:has(~ .intlin)) { 
+    margin-bottom: 1rem;
 }
 div.interlinear {
     padding-left: 1rem;
@@ -44,6 +48,7 @@ h4,
 h5,
 h6 {
     font-family: "Bodoni Bold";
+    margin-top: 4rem;
 }
 a {
     color: whitesmoke;
@@ -69,6 +74,16 @@ main {
     flex-direction: column;
     justify-content: center;
     width: calc(100% - 6rem);
+}
+.katex-display {
+    display: flex;
+    justify-content: center; 
+}
+.katex-display p {
+    margin: 0
+}
+p {
+    text-align: justify;
 }
 p, ul, li {
     font-size: 14pt;
@@ -132,6 +147,7 @@ blockquote {
     }
     *:has(+ aside) {
         float: left;
+        margin-top: 0;
         width: 100%;
     }
 }

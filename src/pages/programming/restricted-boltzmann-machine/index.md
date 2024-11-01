@@ -5,18 +5,30 @@ pubDate: 2024-10-10
 description: 'All about Restricted Boltzmann Machines'
 author: 'Lucas Ericsson'
 ---
-<h1><span class="tokipona" lang="tok"> ilo toki pi nanpa kama nasa</span> Restricted Boltzmann Machines</h1>
+<h1><span class="tokipona" lang="tok"> ilo toki pi nanpa tan nasa</span> Restricted Boltzmann Machines</h1>
 
 *by Lucas Ericsson*
 
 A Boltzmann Machine is a fully connected generative neural network,
 where the probability of the network being in a specific state
 follows the [Boltzmann Distribution](https://en.wikipedia.org/wiki/Boltzmann_distribution).
-It can easily learn distributions of unlabeled data and generates samples from those distributions.
+In contrast to linear or feed-forward nueral networks, which use layers of neurons
+in order from input to output, the Boltzmann Machine initializes some nuerons to the data,
+and lets those nuerons affect adjacent nuerons, repeatingly propogating in every direction.
+This design allows it to learn distributions of unlabeled data 
+and generates samples from those distributions.
+
+<aside>
+This page functions as notes for my future self and anyone else who happens to stumble upon here.
+</aside>
 
 The Boltzmann Distribution is defined as
 
+<span class="katex-display">
+
 $$p_i \propto \exp(-\frac{E(\sigma)}{kT})$$
+
+</span>
 
 Where $T$ is the temperature, and $E(\sigma)$ is the energy function of a state $\sigma$.
 
@@ -26,12 +38,16 @@ Where $T$ is the temperature, and $E(\sigma)$ is the energy function of a state 
 
 For a Boltzmann Machine, the energy is defined as
 
+<span class="katex-display">
+
 $$E(\sigma) = - \displaystyle\sum_{i,j} \sigma_i \sigma_j w_{ij} - \sum_i b_i \sigma_i$$
+
+</span>
 
 where $i \ne j$, $w_{ij}$ is the weight of the edge between two nodes/vertices $i$ and $j$, and $b_i$ is the bias of vertex $i$.
 
 Each neuron node has a binary value of either 0 or 1. Some other designs use -1/1 as the states, but these are interchangeable with some slight modifications to the sampling algorithm. 
-There have been experiements into [Guassian distributed boltzmann machines](https://arxiv.org/pdf/1701.03647), but they won't be covered here.
+There have been experiements into [Guassian distributed boltzmann machines](https://arxiv.org/pdf/1701.03647), but I will be only covering the Bernoulli distributed version.
 
 From this definition, we can derive a method for this network to learn any distribution of data,
 whether it be the inputs and outputs of an AND gate, or the pixels of handwritten numbers (MNIST).
@@ -42,19 +58,26 @@ The Restricted Boltzmann Machine "restricts" the type of graph being used as the
 
 This changes the energy formula to be something like:
 
+<span class="katex-display">
+
 $$E(v, h) = - \displaystyle \sum_{i,j} v_i h_j w_{ij} - \sum_i b_i v_i - \sum_i c_i h_i$$
+
+</span>
 
 This restriction will make more sense when we talk about sampling from the Boltzmann machine.
 
 # Sampling
 
-Calculating the probability of a specific state is infeasable to calculate, due to definition of the probability distribution.
-
-In order to calculate $p(\sigma)$ one would have to calculate the values of $\exp\left(-\frac{E(\sigma)}{kT}\right)$ for every value of $\sigma$ to normalize the probability distribution.
+Calculating the probability of a specific state is infeasable:
+in order to calculate $p(\sigma)$ one would have to calculate the values of $\exp\left(-\frac{E(\sigma)}{kT}\right)$ for every value of $\sigma$ to normalize the probability distribution.
 
 That's the hidden problem with $\propto$, the actual distribution is:
 
+<span class="katex-display">
+
 $$\displaystyle p_i = \frac {\exp\left(-\frac{E(\sigma)}{kT}\right)}{Z}$$
+
+</span>
 
 where $Z=\displaystyle \sum_\sigma\exp\left(-\frac{E(\sigma)}{kT}\right)$
 
@@ -68,7 +91,12 @@ If we can calculate $p(h_i = 1|v)$ then we can probabilistically flip the value 
 Since the shape of the RBM is symmetric, if we can calculate $p(h_i = 1|v)$ then we can calculate $p(v_i = 1|h)$.
 
 So, now we can essentially do "hops" to and from the hidden nuerons like so:
+
+<span class="katex-display">
+
 $$P(h|v) \rightarrow P(v'|h) \rightarrow P(h'|v') \rightarrow \dots$$
+
+</span>
 
 By defining this as a Markov Chain, we can show that this eventually converges to $P(v,h)$ which is the probability distribution we were having trouble calculating values from in the first place.
 
@@ -76,9 +104,17 @@ Since the Restricted Boltzmann Machine visible nuerons are conditionally indepen
 
 [A RBM paper by Asja Fischer and Christian Igel](http://cms.dm.uba.ar/academico/materias/1ercuat2018/probabilidades_y_estadistica_C/5a89b5075af5cbef5becaf419457cdd77cc9.pdf) shows that
 
+<span class="katex-display">
+
 $$P(h_i = 1|v)=\sigma(\sum_j w_{ij}v_j + c_i)$$
 
+</span>
+
+<span class="katex-display">
+
 $$P(v_j = 1|h)=\sigma(\sum_i w_{ij}h_i + b_j)$$
+
+</span>
 
 where $\sigma(z) = \frac{1}{1+e^{-z}}$ is the sigmoid function.
 

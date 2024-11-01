@@ -376,4 +376,104 @@ Or another:
 
 # Orthography
 
+<div class="interlinear">
+    <div class="orig">
+        U'mazzam'jol uampa iuth'tav'ajño'vo vim u'mur imya uampa'oz, pol az'olne o iuth, "itho, a'vipo'uj ila ov'uir'em'oñ'ja?
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">U'-maz-zam'-jol</span>
+        <span class="trans"><span class="sc">pst</span>-go-land-up</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">uampa</span>
+        <span class="trans">duck</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">iuth'-tav'-ajño'-vo</span>
+        <span class="trans">shop-yellow-<span class="sc">&lt;neg&gt;</span>sweet-liquid</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">vim</span>
+        <span class="trans"><span class="sc">conj</span>.and</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">u'-mur</span>
+        <span class="trans"><span class="sc">pst</span>-say</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">imya</span>
+        <span class="trans"><span class="sc">3sg</span></span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">uampa'-oz,</span>
+        <span class="trans">duck-think,</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">pol</span>
+        <span class="trans"><span class="sc">rel</span></span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">az'-olñe</span>
+        <span class="trans"><span class="sc">prs.cont</span>-work</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">o</span>
+        <span class="trans"><span class="sc">pass</span></span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">iuth,</span>
+        <span class="trans">shop,</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">"itho,</span>
+        <span class="trans">"<span class="sc">inj</span>.hi,</span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">a'-vipo'-uj</span>
+        <span class="trans"><span class="sc">prs</span>-have-<span class="sc">q</span></span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">ila</span>
+        <span class="trans"><span class="sc">2sg</span></span>
+        </div>
+    </div>
+    <div class="intlin">
+        <div>
+        <span class="morph">ov'-uir'-em'-oñ'-ja</span>
+        <span class="trans">food-circle-<span class="sc">&lt;neg&gt;</span>big-energy-taste?</span>
+        </div>
+    </div>
+    <div class="freetrans">
+        The duck walked up to the lemonade stand and said to the man, working the stand, "Do you have any grapes?"
+    </div>
+</div>
+
+
 ![Planetary Written Language for Apmau'mur](/canvas.png)
